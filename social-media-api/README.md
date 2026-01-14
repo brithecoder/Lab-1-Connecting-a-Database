@@ -34,12 +34,13 @@ Create a .env file in the root directory:
 ```code snippet
 PORT=3000
 MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/socialDB?retryWrites=true&w=majority
-Note: Replace <password> with your actual database user password.
 ```
+Note: Replace <password> with your actual database user password.
+
 ## 🚦 How to Run
 Start the server using Node:
 
-```Bash
+```bash
 
 node server.js
 ```
