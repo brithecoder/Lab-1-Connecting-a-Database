@@ -31,8 +31,7 @@ Copy your Connection String.
 **3. Environment Variables**
 Create a .env file in the root directory:
 
-```Code snippet
-
+```code snippet
 PORT=3000
 MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/socialDB?retryWrites=true&w=majority
 Note: Replace <password> with your actual database user password.
@@ -59,6 +58,8 @@ You should see two success messages in your terminal:
 In production, your database is your most valuable asset. Whitelisting creates a "firewall" that only allows trusted servers (like your App Server or your office IP) to even attempt a connection. It adds a layer of security before a password is even checked.The risk of allowing connections from anywhere is you can make your site subject to malicious activity.
 
 **What is the purpose of the dotenv package? What other methods could you use to manage environment variables in a production environment (e.g., in a cloud hosting service)?**
+
+
 Its primary job is security and portability. It ensures that sensitive secrets (API keys, DB passwords) are not hard-coded into your source code, which prevents them from being accidentally pushed to GitHub.
 
 
